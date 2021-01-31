@@ -1,0 +1,167 @@
+{
+  "pandoc": {
+    "title": "A lineage tree-based hidden Markov model to quantify cellular heterogeneity",
+    "keywords": [
+      "cancer",
+      "heterogeneity",
+      "lineage",
+      "hidden Markov model"
+    ],
+    "lang": "en-US",
+    "date-meta": "2021-01-30",
+    "author-meta": [
+      "Shakthi Visagan",
+      "Farnaz Mohammadi",
+      "Sean M. Gross",
+      "Luka Karginov",
+      "JC Lagarde",
+      "Laura M. Heiser",
+      "Aaron S. Meyer"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"A lineage tree-based hidden Markov model to quantify cellular heterogeneity\" />\n<meta name=\"citation_title\" content=\"A lineage tree-based hidden Markov model to quantify cellular heterogeneity\" />\n<meta property=\"og:title\" content=\"A lineage tree-based hidden Markov model to quantify cellular heterogeneity\" />\n<meta property=\"twitter:title\" content=\"A lineage tree-based hidden Markov model to quantify cellular heterogeneity\" />\n<meta name=\"dc.date\" content=\"2021-01-30\" />\n<meta name=\"citation_publication_date\" content=\"2021-01-30\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Shakthi Visagan\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, University of California, Los Angeles\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9295-2188\" />\n<meta name=\"citation_author\" content=\"Farnaz Mohammadi\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, University of California, Los Angeles\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0197-4670\" />\n<meta name=\"citation_author\" content=\"Sean M. Gross\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Engineering, Oregon Health and Science University, Portland\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9621-8551\" />\n<meta name=\"citation_author\" content=\"Luka Karginov\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, University of Illinois, Urbana Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2455-1558\" />\n<meta name=\"citation_author\" content=\"JC Lagarde\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, University of California, Los Angeles\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3738-3119\" />\n<meta name=\"citation_author\" content=\"Laura M. Heiser\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biomedical Engineering, Oregon Health and Science University, Portland\" />\n<meta name=\"citation_author\" content=\"Aaron S. Meyer\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, University of California, Los Angeles\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioinformatics, University of California, Los Angeles\" />\n<meta name=\"citation_author_institution\" content=\"Jonsson Comprehensive Cancer Center, University of California, Los Angeles\" />\n<meta name=\"citation_author_institution\" content=\"Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, University of California, Los Angeles\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4513-1840\" />\n<meta name=\"twitter:creator\" content=\"@aarmey\" />\n<link rel=\"canonical\" href=\"https://meyer-lab.github.io/tHMM/\" />\n<meta property=\"og:url\" content=\"https://meyer-lab.github.io/tHMM/\" />\n<meta property=\"twitter:url\" content=\"https://meyer-lab.github.io/tHMM/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://meyer-lab.github.io/tHMM/\" />\n<meta name=\"citation_pdf_url\" content=\"https://meyer-lab.github.io/tHMM/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://meyer-lab.github.io/tHMM/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://meyer-lab.github.io/tHMM/v/55f56a7d36bb00f341817bbdf004934bda4ac8a9/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://meyer-lab.github.io/tHMM/v/55f56a7d36bb00f341817bbdf004934bda4ac8a9/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://meyer-lab.github.io/tHMM/v/55f56a7d36bb00f341817bbdf004934bda4ac8a9/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "January 30, 2021",
+    "authors": [
+      {
+        "github": "shak360",
+        "name": "Shakthi Visagan",
+        "initials": "SV",
+        "orcid": "0000-0001-9295-2188",
+        "affiliations": [
+          "Department of Bioengineering, University of California, Los Angeles"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "farnazmdi",
+        "name": "Farnaz Mohammadi",
+        "initials": "FM",
+        "orcid": "0000-0002-0197-4670",
+        "affiliations": [
+          "Department of Bioengineering, University of California, Los Angeles"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "name": "Sean M. Gross",
+        "initials": "SMG",
+        "orcid": "0000-0002-9621-8551",
+        "affiliations": [
+          "Department of Biomedical Engineering, Oregon Health and Science University, Portland"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "lkargi",
+        "name": "Luka Karginov",
+        "initials": "LK",
+        "orcid": "0000-0002-2455-1558",
+        "affiliations": [
+          "Department of Bioengineering, University of Illinois, Urbana Champaign"
+        ],
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
+        "github": "jclagarde",
+        "name": "JC Lagarde",
+        "initials": "JL",
+        "orcid": "0000-0002-3738-3119",
+        "affiliations": [
+          "Department of Bioengineering, University of California, Los Angeles"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "name": "Laura M. Heiser",
+        "initials": "LMH",
+        "affiliations": [
+          "Department of Biomedical Engineering, Oregon Health and Science University, Portland"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "aarmey",
+        "name": "Aaron S. Meyer",
+        "initials": "ASM",
+        "twitter": "aarmey",
+        "orcid": "0000-0003-4513-1840",
+        "email": "a@asmlab.org",
+        "affiliations": [
+          "Department of Bioengineering, University of California, Los Angeles",
+          "Department of Bioinformatics, University of California, Los Angeles",
+          "Jonsson Comprehensive Cancer Center, University of California, Los Angeles",
+          "Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, University of California, Los Angeles"
+        ],
+        "affiliation_numbers": [
+          1,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Bioengineering, University of California, Los Angeles",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Department of Biomedical Engineering, Oregon Health and Science University, Portland",
+        "affiliation_number": 2
+      },
+      {
+        "affiliation": "Department of Bioengineering, University of Illinois, Urbana Champaign",
+        "affiliation_number": 3
+      },
+      {
+        "affiliation": "Department of Bioinformatics, University of California, Los Angeles",
+        "affiliation_number": 4
+      },
+      {
+        "affiliation": "Jonsson Comprehensive Cancer Center, University of California, Los Angeles",
+        "affiliation_number": 5
+      },
+      {
+        "affiliation": "Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research, University of California, Los Angeles",
+        "affiliation_number": 6
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "meyer-lab/tHMM",
+      "repo_owner": "meyer-lab",
+      "repo_name": "tHMM",
+      "commit": "55f56a7d36bb00f341817bbdf004934bda4ac8a9",
+      "triggering_commit": "55f56a7d36bb00f341817bbdf004934bda4ac8a9",
+      "build_url": "https://github.com/meyer-lab/tHMM/commit/55f56a7d36bb00f341817bbdf004934bda4ac8a9/checks",
+      "job_url": "https://github.com/meyer-lab/tHMM/runs/run3"
+    },
+    "html_url": "https://meyer-lab.github.io/tHMM/",
+    "pdf_url": "https://meyer-lab.github.io/tHMM/manuscript.pdf",
+    "html_url_versioned": "https://meyer-lab.github.io/tHMM/v/55f56a7d36bb00f341817bbdf004934bda4ac8a9/",
+    "pdf_url_versioned": "https://meyer-lab.github.io/tHMM/v/55f56a7d36bb00f341817bbdf004934bda4ac8a9/manuscript.pdf",
+    "manubot_version": "0.5.0",
+    "rootstock_commit": null,
+    "manuscript_stats": {
+      "word_count": 8909
+    }
+  }
+}
